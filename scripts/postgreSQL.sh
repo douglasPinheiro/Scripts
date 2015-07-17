@@ -2,7 +2,7 @@
 echo "Installing postgreSQL"  # To get the latest package lists
 sudo apt-get update && sudo apt-get install postgresql postgresql-contrib
 sudo su - postgres 
-psql -d postgres -U postgres # Login with postgres
+sudo psql -d postgres -U postgres # Login with postgres
 
 alter user postgres with password 'postgres';
 \q
